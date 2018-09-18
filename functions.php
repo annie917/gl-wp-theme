@@ -1167,6 +1167,7 @@ function insertFootNote($content) {
 				$custom_fields = get_post_custom();
 				//print_r($custom_fields);
 				//echo "hasheartmurmur=".$custom_fields[hasheartmurmur][0];
+/*
 				$hasheartmurmur = "";
 				$hasheartmurmur = ucwords(trim($custom_fields[hasheartmurmur][0]));
 				if(strlen($hasheartmurmur)>2)
@@ -1180,6 +1181,7 @@ function insertFootNote($content) {
 											</p>';
 					$contactcontent.= '</div>';
 				}
+*/
 
 				$contactcontent.= '<div class="contentfooternote">';
 				$contactcontent.= '<a id="adopt-a-greyhound-smile" href="'.esc_url( home_url( '/' ) ).'adopt-a-greyhound/" title="Adopt a greyhound, they make excellent pets"><img src="'.esc_url( home_url( '/' ) ).'wp-content/themes/greyhoundlifeline/images/smile-logo-slim.jpg" width="466" height="41" alt="Adopt a greyhound and make him smile"/></a>';
