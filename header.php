@@ -74,6 +74,47 @@
 
 <body <?php body_class(); ?>>
 
+	<div id="topbar">
+		<ul>
+			<li class="leftindent"><a class="fl" href="<?php echo esc_url( home_url( '/' ) ); ?>contact/" title="Contact Greyhound Lifeline Today">Book an Appointment</a></li>
+			<li class="ghlred"><span>Search Greyhound Lifeline</span><?php get_search_form(); ?></li>
+			<li class="ghlfr"><a rel="nofollow" href="javascript:if(document.all) window.external.AddFavorite(location.href,'Greyhound Lifeline'); else if(window.sidebar)window.sidebar.addPanel('Greyhound Lifeline',location.href,'');" title="Bookmark Greyhound Lifeline">Bookmark</a></li>
+			<li class="ghlfr"><a rel="nofollow" href="<?php echo esc_url( home_url( '/' ) ); ?>sitemap/" title="Sitemap for Greyhound Lifeline">Sitemap</a></li>
+			<li class="ghlfr">
+				<div id="gp1">
+					<script type="text/javascript">
+						<!--//--><![CDATA[//><!--
+						var gp = document.createElement('g:plusone');
+						gp.setAttribute("count","false");
+						document.getElementById("gp1").appendChild(gp);
+						//--><!]]>
+					</script>
+				</div>
+				<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+			</li>
+			<li class="ghlfr">
+				<a href="http://www.addtoany.com/share_save" rel="external nofollow" onclick="target='_blank'">
+					<img id="a2a_dd" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/greyhoundlifeline/images/icons/greyhound-lifeline-share.png" width="171" height="16" alt="Share/Bookmark" title="Share Greyhound lifeline to your favourite social network"/>
+				</a>
+				<script type="text/javascript">
+					a2a_config = {
+						color_bg: "eff5fe",
+						color_main: "ffffff",
+						color_border: "004B91",
+						color_link_text: "2886d4",
+						color_link_text_hover: "2886d4",
+						color_arrow: "ffffff",
+						color_arrow_hover: "eeeeee",
+						border_size: "10",
+						hide_embeds: "0"
+					};
+				</script>
+				<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
+				<!-- AddToAny END -->
+			</li>
+		</ul>
+	</div>
+
 <div id="page" class="hfeed">
 
 	<header id="branding" role="banner">
@@ -84,6 +125,21 @@
 					<span>Join us on Facebook</span>
 				</a>
 			</li>
+			<li>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>feed/" onclick="target='_blank'" title="Subscribe to Greyhound Lifeline RSS Feed">
+					<img id="site-icon-rss" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/greyhoundlifeline/images/icons/greyhound-lifeline-rss-feed.png" width="32" height="32" alt="Greyhound Lifeline RSS Feed"/>
+					<span>Subscribe by RSS</span>
+				</a>
+			</li>
+<!--
+***Newsletter option removed 30/04/18 AA ***
+			<li>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>greyhound-lifeline-newsletter/" title="Join the Greyhound Lifeline Newsletter">
+					<img id="site-icon-newsletter" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/greyhoundlifeline/images/icons/greyhound-lifeline-newsletter.png" width="32" height="32" alt="Greyhound Lifeline Newsletter"/>
+					<span>Join Our Newsletter</span>
+				</a>
+			</li>
+-->
 		</ul>
 		<a href="http://www.greyhoundlifeline.co.uk/" title="Greyhound Lifeline - Supporting UK Greyhound Rescue and Rehoming">
 			<img id="site-logo" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/greyhoundlifeline/images/headers/greyhound-lifeline-logo.png" width="120" height="122" alt="Greyhound Lifeline logo"/>
@@ -114,7 +170,7 @@
 		<?php get_latest_postbar(); ?>
 		
 		<div id="bcbreadcrumbs">
-		<?php //if (function_exists(bcn_display)) {bcn_display();} ?>
+		<?php if (function_exists(bcn_display)) {bcn_display();} ?>
 		</div>
 		
 <?php
