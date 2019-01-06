@@ -25,11 +25,11 @@
 		
 		<div id="footer-top-site-links">
 			<ul>
-				<li><a href="http://www.greyhoundlifeline.co.uk/" title="">Greyhound Lifeline</a></li>
-				<li><a href="http://www.greyhoundlifeline.co.uk/privacy-policy/" title="Greyhound Lifeline Privacy Policy">Privacy Policy</a></li>
-                <li><a href="http://www.greyhoundlifeline.co.uk/information/greyhound-resources-links/" title="Greyhound Lifeline Resources and Links">Resources and Links</a></li>
+				<li><a href="https://www.greyhoundlifeline.co.uk/" title="">Greyhound Lifeline</a></li>
+				<li><a href="https://www.greyhoundlifeline.co.uk/privacy-policy/" title="Greyhound Lifeline Privacy Policy">Privacy Policy</a></li>
+                <li><a href="https://www.greyhoundlifeline.co.uk/information/greyhound-resources-links/" title="Greyhound Lifeline Resources and Links">Resources and Links</a></li>
 
-				<li><a href="http://www.greyhoundlifeline.co.uk/terms-and-conditions/" title="Greyhound Lifeline Site Terms and Conditions">Terms and Conditions</a></li>
+				<li><a href="https://www.greyhoundlifeline.co.uk/terms-and-conditions/" title="Greyhound Lifeline Site Terms and Conditions">Terms and Conditions</a></li>
 <!--				<li><a href="http://www.greyhoundlifeline.co.uk/sitemap/" title="Greyhound Lifeline Sitemap">Sitemap</a></li>-->
 <!--
 ***Newsletter option removed 30/04/18 AA ***
@@ -38,7 +38,7 @@
 <!--
 				<li><a href="http://www.greyhoundlifeline.co.uk/feed/" onclick="target='_blank'" title="Subscribe to the greyhound Lifeline RSS Feed">RSS Feed</a></li>
 -->
-				<li><a href="http://www.greyhoundlifeline.co.uk/contact/" title="Contact Greyhound Lifeline">Contact</a></li>
+				<li><a href="https://www.greyhoundlifeline.co.uk/contact/" title="Contact Greyhound Lifeline">Contact</a></li>
 			</ul>
 		</div>
 
@@ -51,7 +51,7 @@
 
 		<div id="footer-bottominfo">
 			<ul>
-				<li>&copy; <?php echo date("Y"); ?> <a href="http://www.greyhoundlifeline.co.uk/" title="Adopt a Greyhound from Greyhound Lifeline">Greyhound Lifeline</a> - Finds loving homes for greyhounds and is run entirely by volunteers (Registered Charity number 1173175)</li>
+				<li>&copy; <?php echo date("Y"); ?> <a href="https://www.greyhoundlifeline.co.uk/" title="Adopt a Greyhound from Greyhound Lifeline">Greyhound Lifeline</a> - Finds loving homes for greyhounds and is run entirely by volunteers (Registered Charity number 1173175)</li>
 				<!--<li class="ghlright"><a href="https://uk.linkedin.com/in/kevinjaques" onclick="target='_blank'" title="Contact Kev Jaques Today">Kev Jaques</a></li>-->
 			</ul>
 		</div>

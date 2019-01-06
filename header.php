@@ -45,7 +45,7 @@
 		echo ' | ' . sprintf( __( 'Page %s', 'twentyeleven' ), max( $paged, $page ) );
 
 	?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>
@@ -81,7 +81,7 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 	<header id="branding" role="banner">
 		<ul id="ghl-networking">
 			<li>
-				<a href="http://www.facebook.com/pages/Greyhound-Lifeline/140115126025085" rel="nofollow" onclick="target='_blank'" title="Join Greyhound Lifeline on Facebook">
+				<a href="https://www.facebook.com/pages/Greyhound-Lifeline/140115126025085" rel="nofollow" onclick="target='_blank'" title="Join Greyhound Lifeline on Facebook">
 					<img id="site-icon-facebook" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/greyhoundlifeline/images/icons/greyhound-lifeline-facebook.png" width="32" height="32" alt="Greyhound Lifeline Facebook"/>
 					<span>Join us on Facebook</span>
 				</a>
@@ -104,7 +104,7 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 			</li>
 -->
 		</ul>
-		<a href="http://www.greyhoundlifeline.co.uk/" title="Greyhound Lifeline - Supporting UK Greyhound Rescue and Rehoming">
+		<a href="https://www.greyhoundlifeline.co.uk/" title="Greyhound Lifeline - Supporting UK Greyhound Rescue and Rehoming">
 			<img id="site-logo" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/greyhoundlifeline/images/headers/greyhound-lifeline-logo.png" width="120" height="122" alt="Greyhound Lifeline logo"/>
 		</a>
 		<hgroup>

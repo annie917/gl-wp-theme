@@ -977,11 +977,11 @@ function get_general_information()
 ?>
  
   <div id="general-information" class="clearfix">
-    <h1 class="entry-title"><a href="http://www.greyhoundlifeline.co.uk/information/general-information/" title="Permalink to General Information" rel="bookmark">General Information</a></h1>
+    <h1 class="entry-title"><a href="https://www.greyhoundlifeline.co.uk/information/general-information/" title="Permalink to General Information" rel="bookmark">General Information</a></h1>
     <h4>Join Greyhound Lifeline on Facebook</h4>
-    <a href="http://www.facebook.com/pages/Greyhound-Lifeline/140115126025085" rel="nofollow" onclick="target='_blank'" title="Join Greyhound Lifeline on Facebook">Greyhound Lifeline are on Facebook</a>, please come and visit us there.
+    <a href="https://www.facebook.com/pages/Greyhound-Lifeline/140115126025085" rel="nofollow" onclick="target='_blank'" title="Join Greyhound Lifeline on Facebook">Greyhound Lifeline are on Facebook</a>, please come and visit us there.
     <h4>Choosing a Boy or Girl Greyhound</h4>
-    <a href="http://www.greyhoundlifeline.co.uk/adopt/choosing-boy-girl-greyhound/" title="Choosing a Boy or Girl Greyhound">Boy or Girl</a> highlights the common problem in greyhound rescue and re homing of finding homes for the greyhound males. Perhaps after reading through the page you might give equal consideration to adopting a boy. 	
+    <a href="https://www.greyhoundlifeline.co.uk/adopt/choosing-boy-girl-greyhound/" title="Choosing a Boy or Girl Greyhound">Boy or Girl</a> highlights the common problem in greyhound rescue and re homing of finding homes for the greyhound males. Perhaps after reading through the page you might give equal consideration to adopting a boy. 	
   </div>
 
 <?php
@@ -1236,7 +1236,7 @@ function insertFootNote($content) {
 											'.$hasheartmurmur.' has a heart murmur, however, please don\'t overlook '.$hasheartmurmur.' for adoption.
 											<br/>
 											Please look at our information about 
-											<a href="http://www.greyhoundlifeline.co.uk/information/big-hearted-greyhounds/" title="These greyhounds still need your love, so don\'t be put off by this condition">Greyhound Heart Murmurs</a>
+											<a href="https://www.greyhoundlifeline.co.uk/information/big-hearted-greyhounds/" title="These greyhounds still need your love, so don\'t be put off by this condition">Greyhound Heart Murmurs</a>
 											</p>';
 					$contactcontent.= '</div>';
 				}
@@ -1319,7 +1319,7 @@ function get_greyhound_donation()
 			<fieldset>
 				<input type="hidden" name="cmd" value="_s-xclick">
 				<input type="hidden" name="hosted_button_id" value="9KE2JFPR2BRBQ">
-				<input onclick="target='_blank'" type="image" src="http://www.greyhoundlifeline.co.uk/images/btn_donateCC_LG.gif" width="160" height="47" id="ppl" name="submit" alt="Please Donate to Greyhound Lifeline">
+				<input onclick="target='_blank'" type="image" src="https://www.greyhoundlifeline.co.uk/images/btn_donateCC_LG.gif" width="160" height="47" id="ppl" name="submit" alt="Please Donate to Greyhound Lifeline">
 				<img alt="Please Donate to Greyhound Lifeline" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
 			</fieldset>
 		</form>

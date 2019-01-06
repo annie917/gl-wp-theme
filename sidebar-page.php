@@ -25,9 +25,9 @@ get_header(); ?>
 				<div class="shareaholic-like-buttonset">
 					<h4>Please share with your friends</h4>
 					<ul>
-						<li><a rel="nofollow" title="Like this page on Facebook" class="shareaholic-fblike" shr_layout="standard" shr_showfaces="false"  shr_send = "false" shr_action="like" shr_href="http://www.greyhoundlifeline.co.uk/"></a></li>
-						<li><a rel="nofollow" title="Share this page on Facebook" class="shareaholic-fbsend" shr_href="http://www.greyhoundlifeline.co.uk/"></a></li>
-						<li><a rel="nofollow" class="shareaholic-googleplusone" shr_size="standard" shr_count="true" shr_href="http://www.greyhoundlifeline.co.uk/"></a></li>
+						<li><a rel="nofollow" title="Like this page on Facebook" class="shareaholic-fblike" shr_layout="standard" shr_showfaces="false"  shr_send = "false" shr_action="like" shr_href="https://www.greyhoundlifeline.co.uk/"></a></li>
+						<li><a rel="nofollow" title="Share this page on Facebook" class="shareaholic-fbsend" shr_href="https://www.greyhoundlifeline.co.uk/"></a></li>
+						<li><a rel="nofollow" class="shareaholic-googleplusone" shr_size="standard" shr_count="true" shr_href="https://www.greyhoundlifeline.co.uk/"></a></li>
 					</ul>
 				</div>
 
