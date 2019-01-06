@@ -48,7 +48,8 @@ get_header(); ?>
 						<?php 
 							if(!is_page(array('privacy-policy','contact', 'terms-and-conditions', 'sitemap', 'greyhound-resources-links')))
 							{
-								if(function_exists('selfserv_shareaholic')) { selfserv_shareaholic(); }
+								//if(function_exists('selfserv_shareaholic')) { selfserv_shareaholic(); }
+                                //echo do_shortcode('[shareaholic app="share_buttons" id="22189790"]');
 							}
 						?>
 					</div>
@@ -56,17 +57,23 @@ get_header(); ?>
 				</div>
 
 				<?php //show the latest general information post only here
-					$my_query = new WP_Query('category_name=information&name=general-information&posts_per_page=1'); ?>
-				<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+					//$my_query = new WP_Query('category_name=information&name=general-information&posts_per_page=1'); ?>
+				<?php //while ($my_query->have_posts()) : $my_query->the_post(); ?>
 				<!-- Do special_cat stuff... -->
-				<?php endwhile; ?>
+				<?php //endwhile; ?>
 
-				<?php get_template_part( 'content', 'page' ); ?>
+				<?php//get_template_part( 'content', 'page' ); ?>
 				
 				<?php get_endpageshare(); ?>
-				<?php ghl_get_events(5); ?>
+				<?php /*ghl_get_events(5);*/ ?>
+
+
 			</div><!-- #content -->
-			<?php get_sidebar(); ?>
+
+			<?php get_sidebar(); 
+            get_general_information();?>
+			
+
 		</div><!-- #primary -->
 
 <?php get_footer(); ?>

@@ -1,4 +1,5 @@
 /*
+/*
 Theme Name: Greyhound Lifeline
 Theme URI: Greyhound Lifeline
 Author: MultiLayer Design
@@ -31,6 +32,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	padding: 0;
 	vertical-align: baseline;
 }
+
 :focus {/* remember to define focus styles! */
 	outline: 0;
 }
@@ -88,16 +90,24 @@ body {
 	float: left;
 	width: 100%;
 }
+
 #content {
 	float: left;
 	margin: 0;
+  }
 
-}
 #secondary {
 	float: right;
 	margin-right: 40px;
 	width: 255px;
 /*border: solid 1px red;*/
+}
+
+aside a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 }
 
 /* Singular */
@@ -384,9 +394,9 @@ p {
 ul, ol {
 	margin: 0 0 1.425em 2.5em;
 }
-ul {
+/*ul {
 	list-style: disc;
-}
+}*/
 ol {
 	list-style-type: decimal;
 }
@@ -546,7 +556,7 @@ input#searchsubmit:hover
 {
 	color: #40a4ee;
 	border: solid 1px #40a4ee;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
 /* Links */
@@ -557,7 +567,7 @@ a {
 a:focus,
 a:active,
 a:hover {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 	color: #952610;
 }
 
@@ -575,7 +585,7 @@ a:hover {
 	clip: auto !important;
 	font-size: 12px;
 	position: absolute;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 	top: 0;
 	left: 7.6%;
 
@@ -665,7 +675,7 @@ h5
 }
 #topbar ul li a:hover
 {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
 #search-form, #s
@@ -695,6 +705,7 @@ h5
 	z-index: 2;
 	width: 980px;
 	height: 200px;
+    padding-top: 15px;
 }
 
 #site-logo
@@ -709,7 +720,7 @@ h5
 
 #branding hgroup {
 	float: left;
-	width: 470px;
+	width: 570px;
 	height: auto;
 	margin: 5px 0 0 15px;
 	padding: 0;
@@ -721,12 +732,13 @@ h5
 h1#site-title a {
 	float: left;
 	color: #5f5d53 !important;
-	font-size: 42px;
+	font-size: 48px;
 	font-weight: bold;
 	line-height: 46px;
 	text-decoration: none;
 	font-family: "Arial Black", Verdana, Tahoma, "Helvetica Neue", Helvetica, sans-serif;
 	text-shadow: 1px 1px 2px #666;
+    margin-top: 20px;
 }
 h1#site-title a span{
 	color: #952610 !important;
@@ -750,6 +762,7 @@ h1#site-title a:hover span{
 }
 h2#site-description {
 	color: #339eed !important;
+    margin-bottom: 10px;
 }
 
 h3#independent-volunteer-greyhound-rehoming
@@ -758,7 +771,7 @@ h3#independent-volunteer-greyhound-rehoming
 	color: #999 !important;
 	font-size: 12px;
 	font-style: italic;
-	margin: 0 0 0 5px;
+	margin: 0 0 20px 5px;
 	height: 14px;
 	width: 510px !important;
 }
@@ -773,21 +786,45 @@ h3#independent-volunteer-greyhound-rehoming
 	width: 460px;
 }*/
 
-#telephone-greyhound-lifeline
+/*#telephone-greyhound-lifeline
 {
 	position: relative;
 	float: right;
-	margin: 10px 30px 0 0;
-	padding: 0;
-	width: 295px;
+	/*margin: 10px 30px 0 0;
+	padding: 0;*/
+	/*width: 295px;
 	height: 84px;
+}*/
+a.tel
+{
+	float: right;
+	display: block;
+	margin: 35px 0px 0 0;
+	width: 230px;
+	height: 44px;
+}
+a.tel, a.tel span
+{
+	font-size: 18px !important;
+	color: #952610;
+	text-shadow: 1px 0 3px #666 !important;
+}
+a.tel span
+{
+	unicode-bidi:bidi-override !important;
+	direction:rtl !important;
+}
+
+a.tel:hover, a.tel span:hover
+{
+    color: #5f5d53;
 }
 
 #ghl-networking
 {
 	position: relative;
 	float: right;
-	margin: 7px 30px 0 0;
+	margin: 15px 0px 0 0;
 	padding: 0;
 	width: auto;
 	list-style: none;
@@ -829,7 +866,7 @@ h3#independent-volunteer-greyhound-rehoming
 }
 #ghl-networking li a span:hover
 {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .post-date{
@@ -880,7 +917,7 @@ h3#independent-volunteer-greyhound-rehoming
 #topnotifierbarholder ul {float: left; list-style: none; padding: 0; margin: 0; height: 25px; width: 380px;}
 #topnotifierbarholder ul li {float: left; list-style: none; padding: 0; margin: 0; display: inline;}
 #topnotifierbarholder ul li a {float: left; padding: 5px 8px 0 0; width: 380px; height: 25px; font-size: 13px;}
-#topnotifierbarholder ul li a:hover {text-decoration: underline;}
+#topnotifierbarholder ul li a:hover {/*text-decoration: underline;*/}
 
 #ghllatest-nav
 {
@@ -926,7 +963,7 @@ h3#independent-volunteer-greyhound-rehoming
 	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 .slideshow ul li a span{float: left; width: 170px; height: 20px; margin: 0 0 0 10px; font-size: 14px !important; font-weight: bold;}
-.slideshow ul li a:hover span {text-decoration: underline;}
+.slideshow ul li a:hover span {/*text-decoration: underline;*/}
 .slideshow img {
 	float: left !important;
 	margin: 5px 0 0 9px !important;
@@ -997,7 +1034,7 @@ h3#independent-volunteer-greyhound-rehoming
 	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 .featuredslideshow ul li a span{float: left; width: 500px; height: 20px; margin: -3px 0 0 0; font-size: 14px !important; font-weight: bold;}
-.featuredslideshow ul li a:hover span {text-decoration: underline;}
+.featuredslideshow ul li a:hover span {/*text-decoration: underline;*/}
 .featuredslideshow img {
 	min-width: 500px !important;
 	width: 500px !important;
@@ -1029,8 +1066,9 @@ h3#independent-volunteer-greyhound-rehoming
 	padding: 4px 0 0 10px;
 }
 
-
-#donate-button, #help-button, #view-greyhound-gallery, #view-greyhound-gallery-archive, #view-greyhound-gallery-homed, #view-greyhound-gallery-archivepg
+/* Buttons */
+/*#testimonial-button, #donate-button, #help-button, #view-greyhound-gallery, #view-greyhound-gallery-archive, #view-greyhound-gallery-homed, #view-greyhound-gallery-archivepg*/
+.gl-button
 {
 	position: relative;
 	float: left;
@@ -1042,24 +1080,91 @@ h3#independent-volunteer-greyhound-rehoming
 	padding: 0;
 }
 
+.gl-button ul
+{
+	position: relative;
+	float: left;
+	width: 250px;
+	height: 50px !important;
+	margin: 5px 0 0 0;
+	padding: 0;
+	list-style: none;    
+}
+
+.gl-button ul li
+{
+	float: left;
+	margin: 0 !important;
+	padding: 0 !important;    
+}
+
+.gl-button ul li a
+{
+	float: left;
+	margin: 0 0 0 10px;
+	padding: 4px 0px 5px 5px;
+	min-width: 187px !important;
+	width: 187px !important;
+	max-width: 187px !important;
+	height: 40px !important;
+	max-height: 40px !important;
+    line-height: 40px;
+	background: #952610;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: solid 1px #666;
+	font-size: 11px;
+	font-weight: bold !important;
+	color: #fff;
+	text-align: center;
+}
+
+.gl-button ul li a:hover
+{
+	background: #1982d1;
+}
+
 #donate-button
 {
-	margin: -40px 0 0 50px !important;
+	margin-top: -40px;
+}
+
+#donate-button ul li a
+{
+    font-size: 22px;
 }
 
 #help-button
 {
-	margin: 10px 0 0 50px !important;
+	margin-top: 10px;
+}
+
+#help-button ul li a
+{
+    font-size: 22px;
 }
 
 #view-greyhound-gallery
 {
-	margin: 50px 0 0 50px !important;
+	margin-top: 50px;
+}
+
+#view-greyhound-gallery ul li a
+{
+    font-size: 14px;
 }
 
 #view-greyhound-gallery-homed
 {
-    margin: 40px 0 0 50px
+    margin-top: 40px;
+}
+
+#view-greyhound-gallery-homed ul li a
+{
+    font-size: 18px;
 }
 
 #view-greyhound-gallery-archivepg
@@ -1073,12 +1178,24 @@ h3#independent-volunteer-greyhound-rehoming
 	margin: -25px 0 0 50px !important;
 }
 
-#donate-button ul, #help-button ul, #view-greyhound-gallery ul, #view-greyhound-gallery-archive ul, #view-greyhound-gallery-homed ul, #view-greyhound-gallery-archivepg ul
+#testimonial-button
+{
+    margin-left: 0;
+}
+
+#testimonial-button ul li a
+{
+    font-size: 12px;
+    margin-left: 0;
+}
+
+
+/*#donate-button ul, #help-button ul, #view-greyhound-gallery ul, #view-greyhound-gallery-archive ul, #view-greyhound-gallery-homed ul, #view-greyhound-gallery-archivepg ul
 {
 	position: relative;
 	float: left;
 	width: 250px;
-	height: 35px !important;
+	height: 50px !important;
 	margin: 5px 0 0 0;
 	padding: 0;
 	list-style: none;
@@ -1094,7 +1211,7 @@ h3#independent-volunteer-greyhound-rehoming
 	margin: 0 !important;
 	padding: 0 !important;
 }
-#donate-button ul li a, #help-button ul li a, #view-greyhound-gallery ul li a, #view-greyhound-gallery-archive ul li a, #view-greyhound-gallery-homed ul li a, #view-greyhound-gallery-archivepg ul li a
+#testimonial-button, #donate-button ul li a, #help-button ul li a, #view-greyhound-gallery ul li a, #view-greyhound-gallery-archive ul li a, #view-greyhound-gallery-homed ul li a, #view-greyhound-gallery-archivepg ul li a
 {
 	float: left;
 	margin: 0 0 0 10px;
@@ -1137,6 +1254,8 @@ h3#independent-volunteer-greyhound-rehoming
 {
 	font-size: 20px;
 }
+*/
+
 
 .gallery_pages_list
 {
@@ -1202,7 +1321,7 @@ h3#independent-volunteer-greyhound-rehoming
 {
 	position: relative;
 	float: left;
-	margin: 0 0 0 50px !important;
+	margin: 30px 0 0 50px !important;
 	padding: 0 !important;
 }
 
@@ -1227,14 +1346,14 @@ h3#independent-volunteer-greyhound-rehoming
 	float: left;
 	background: #f1f1f1;
 }
-.cat-item, #secondary .menu-item
+.cat-item, #secondary .menu-item, #secondary li
 {
 	float: left;
 	
 	background: url(images/icons/bullet.png) 0 7px no-repeat; text-decoration: none; margin: 0 0 0 10px; padding: 5px 0 5px 25px;
 	display: block;
 }
-.cat-item a, #secondary .menu-item a
+.cat-item a, #secondary .menu-item a, #secondary a
 {
 	float: left;
 	cursor: hand;
@@ -1250,9 +1369,16 @@ h3#independent-volunteer-greyhound-rehoming
 {
 	background: url(images/icons/bullet-hover.png) 0 7px no-repeat; text-decoration: none; margin: 0 0 0 10px; padding: 5px 0 5px 25px;
 }
+
+#secondary li:hover
+{
+	background: url(images/icons/bullet-hover.png) 0 7px no-repeat; text-decoration: none; margin: 0 0 0 10px; padding: 5px 0 5px 25px;
+}
+
 #secondary ul
 {
-	list-style: none;
+	list-style: none !important;
+    background-image: none;
 }
 .category-archive-meta, .tag-archive-meta
 {
@@ -1285,22 +1411,22 @@ h3#independent-volunteer-greyhound-rehoming
 {
 	position: relative;
 	float: left;
-	background: #fff;
+	background: #f9f9f6;
 	min-width: 370px;
 	width: 370px;
 	max-width: 370px;
-	min-height: 150px;
+	/*min-height: 150px;*/
 	height: auto !important;
-	margin: 0 0 0 -15px !important;
+	margin: 0 0 0 0px !important;
 	padding: 10px 10px 10px 0 !important;
-	border: solid 2px #952610 !important;
+	/*border: solid 2px #952610 !important;*/
 	z-index: 1004 !important;
 	display: block;
-	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	/*-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 	-moz-border-radius: 5px;
-	border-radius: 5px;
+	border-radius: 5px;*/
 }
 
 .sub-menu li
@@ -1325,16 +1451,18 @@ h3#independent-volunteer-greyhound-rehoming
 	text-decoration: none !important;
 }
 
-#access .menu-item .sub-menu li.current-menu-item a, #nav_menu-3 .current-menu-item a:active
+/*#access .menu-item .sub-menu li.current-menu-item a, #nav_menu-3 .current-menu-item a:active
 {
 	color: #952610 !important;
 	text-decoration: underline !important;
-}
+}*/
 
 #access .menu-item .sub-menu li a
 {
-	color: #1982d1 !important;
+	color:#5f5d53;
 	text-decoration: none !important;
+    text-align: left;
+    font-weight: normal;
 }
 .sub-menu li a
 {
@@ -1345,13 +1473,13 @@ h3#independent-volunteer-greyhound-rehoming
 	background: none !important;
 	margin: 0 0 0 10px !important;
 	padding-left: 20px !important;
-	color: #1982d1 !important;
+	color: #1982d1;
 	text-decoration: none !important;
 }
 .sub-menu li a:hover
 {
 	color: #952610 !important;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
 /*NEW*/
@@ -1425,7 +1553,7 @@ h3#independent-volunteer-greyhound-rehoming
 }
 #gimages ul li a:hover span
 {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 #gimages li.lastimage {
 	margin-right: 0;
@@ -1486,11 +1614,11 @@ h3#independent-volunteer-greyhound-rehoming
 	float: left;
 	list-style: none;
 	margin: 0 0 0 -15px;
-	padding: 8px 0 0 0;
+	padding: 18px 0 0 0;
 	height: 60px;
 	width: 890px;
-	border-top: groove 1px #ccc;
 }
+
 #access li {
 	position: relative;
 	float: left;
@@ -1498,8 +1626,9 @@ h3#independent-volunteer-greyhound-rehoming
 	width: auto;
 	max-width: 220px !important;
 	margin: 0 !important;
-	padding: 0 5px 0 0 !important;
-	border-right: dotted 1px #999;
+	padding: 0 10px 0 10px !important;
+	/*border-right: dotted 1px #999;
+    border-left: dotted 1px #999;*/
 }
 #access a {
 	color: #5f5d53;
@@ -1507,13 +1636,14 @@ h3#independent-volunteer-greyhound-rehoming
 	margin: 0;
 	padding: 0 0 0 5px;
 	text-decoration: none;
-	font-size: 23px;
+	font-size: 20px;
 	font-weight: bold;
 	font-family: "Arial Black", Verdana, Tahoma, "Helvetica Neue", Helvetica, sans-serif;
 	line-height: 26px;
 	height: 30px;
 	text-shadow: 1px 1px 2px #999;
 	display: block;
+    text-align: center;
 }
 #access ul ul {
 	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
@@ -1523,7 +1653,7 @@ h3#independent-volunteer-greyhound-rehoming
 	float: left;
 	margin: 0;
 	position: absolute;
-	top: 3.333em;
+	top: 2.0em;
 	left: 0;
 	width: 188px;
 	z-index: 99999;
@@ -1534,9 +1664,9 @@ h3#independent-volunteer-greyhound-rehoming
 }
 #access ul ul a {
 	background: #f9f9f9;
-	border-bottom: 1px dotted #999;
+	/*border-bottom: 1px dotted #999;*/
 	color: #444;
-	font-size: 13px;
+	font-size: 16px;
 	font-weight: normal;
 	height: auto;
 	line-height: 1.3em;
@@ -1547,11 +1677,13 @@ h3#independent-volunteer-greyhound-rehoming
 #access li:hover > a,
 #access a:focus {
 	color: #952610;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 #access ul li:hover > ul {
 	display: block;
+    color: #952610;
 }
+
 #access .current_page_item > a,
 #access .current_page_ancestor > a {
 	font-weight: bold;
@@ -1567,6 +1699,11 @@ h3#independent-volunteer-greyhound-rehoming
 	text-shadow: none;
 	display: block;
 	padding-top: 8px;
+}
+
+#menu-headermenu
+{
+	border-top: groove 1px #ccc;    
 }
 
 /* Search Form */
@@ -1719,7 +1856,7 @@ h2.entry-title a:active,
 , #maingreyhoundgallery h1 a:active
 {
 	color: #1982d1 !important;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
 .entry-meta {
@@ -1776,19 +1913,50 @@ footer span.edit-link {
 {
 	position: relative;
 	float: left;
-	margin: 0 0 0 70px !important;
-	padding: 0 !important;
+	margin: 10px 0 0 70px !important;
+	padding: 0;
 	background: #fff url(images/post-gradient.png) top repeat-x;
 	color: #333;
-	border: solid 2px #952610;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
+	border: solid 1px #952610;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 	-webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.5), 0 0 2px rgba(255,255,255,0.5);
 	-moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.5), 0 0 2px rgba(255,255,255,0.5);
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.5), 0 0 2px rgba(255,255,255,0.5);
 	min-width: 590px;
 	width: 590px;
 	max-width: 590px;
+}
+
+#general-information
+{
+	position: relative;
+	float: left;
+	margin: 20px 0 0 70px !important;
+	padding-left: 20px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+	background: #fff url(images/post-gradient.png) top repeat-x;
+	color: #333;
+	border: solid 1px #952610;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.5), 0 0 2px rgba(255,255,255,0.5);
+	-moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.5), 0 0 2px rgba(255,255,255,0.5);
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.5), 0 0 2px rgba(255,255,255,0.5);
+	min-width: 555px;
+	width: 555px;
+	max-width: 555px;
+}
+
+#general-information h3, h4 {
+    
+    padding-top: 10px;
+}
+
+#topnotifierbarholder
+{
+    margin-bottom: 10px;
 }
 
 #archive-gallery-content
@@ -1890,7 +2058,7 @@ footer span.edit-link {
 	position: relative;
 	float: left;	
 	margin: 5px 0 0 10px;
-	height: 32px;
+	height: 45px;
 	width: 500px;
 	padding: 0;
 	list-style: none;
@@ -2051,10 +2219,10 @@ dl.gallery-item {
 	float: left;
 	width: 510px;
 	height: auto;
-	margin: 0 0 0 30px;
+	margin: 0 0 15px 30px;
 	padding: 0;
 	font-size: 13px;
-	border-bottom: solid 3px #952610;
+	/*border-bottom: solid 3px #952610;*/
 	color: #666;
 }
 
@@ -2970,7 +3138,7 @@ section.recent-posts .hentry {
 }
 section.recent-posts .other-recent-posts {
 	border-bottom: 1px solid #ddd;
-	list-style: none;
+	list-style: none !important;
 	margin: 0;
 }
 section.recent-posts .other-recent-posts li {
@@ -3197,7 +3365,7 @@ section.recent-posts .other-recent-posts li:after, .ghlcb {
 	letter-spacing: 0.02em;
 	line-height: 1.2em;
 	text-transform: uppercase;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 	text-shadow: 1px 1px 1px #bbb;
 	/*background: url(images/icons/arrowright.png) right 1px no-repeat;*/
 	background: url(images/icons/greyhound-lifeline-ring.png) left 2px no-repeat;
@@ -3217,7 +3385,7 @@ section.recent-posts .other-recent-posts li:after, .ghlcb {
 	clear: both;
 	font-size: 15px;
 	margin: 0;
-	list-style: inside;
+	/*list-style: inside;*/
 
 }
 .widget ul ul {
@@ -3234,7 +3402,7 @@ clear: both;
 .widget a:hover,
 .widget a:focus,
 .widget a:active {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
 /* Search Widget */
@@ -3268,8 +3436,8 @@ clear: both;
 /* Ephemera Widget */
 section.ephemera ol,
 .widget_twentyeleven_ephemera ol {
-	list-style: square;
-	margin: 5px 0 0;
+	/*list-style: square;
+	margin: 5px 0 0;*/
 }
 .widget_twentyeleven_ephemera .widget-entry-title {
 	font-size: 15px;
@@ -3671,7 +3839,7 @@ a.comment-reply-link > span {
 	width: 160px !important;
 	height: 35px !important;
 }
-#respond input#submit:hover, #respond input#submit:active, .wpcf7-submit:hover, .wpcf7-submit:active, #donate-button ul li a:hover, #view-greyhound-gallery ul li a:hover, #view-greyhound-gallery-archivepg ul li a:hover, #help-button ul li a:hover
+#respond input#submit:hover, #respond input#submit:active, .wpcf7-submit:hover, .wpcf7-submit:active
 {
 	background: #1982d1;
 	color: #fff;
@@ -3722,7 +3890,7 @@ a.comment-reply-link > span {
 
 #respond .logged-in-as a:hover,
 #respond #cancel-comment-reply-link:hover {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 .commentlist #respond {
 	margin: 1.425em 0 0;
@@ -3776,7 +3944,7 @@ p.comment-form-comment {
 
 #footer-top-site-links
 {
-	width: 800px;
+	width: 95%;
 	height: 40px;
 	border-top: dotted 1px #999;
 	border-bottom: dotted 1px #999;
@@ -3784,11 +3952,18 @@ p.comment-form-comment {
 }
 #footer-top-site-links ul
 {
-	width: 800px;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+	/*width: 100%;
 	height: 40px;
 	margin: 0 0 0 10px;
 	padding: 0;
 	list-style: none;
+    text-align: center*/
 }
 
 #footer-top-site-links ul li
@@ -3799,8 +3974,9 @@ p.comment-form-comment {
 	display: inline;
 	width: auto;
 	height: 40px;
-
+    display: inline-block;
 }
+
 #footer-top-site-links ul li a
 {
 	float: left;
@@ -3854,7 +4030,7 @@ p.comment-form-comment {
 #supplementary {
 	
 	/*padding: 1.425em 7.6%;*/
-	margin: 0;
+	margin-top: 20px;
 	padding: 0 0 0 30px;
 	overflow: hidden;
 	background: url(images/bg-gradient-bottom.png) bottom repeat-x;
@@ -3880,13 +4056,13 @@ p.comment-form-comment {
 	margin-right: 0;
 }
 
-#greyhound-testimonials
+/*#greyhound-testimonials
 {
 	position: relative;
 	float: left;
 	min-width: 280px;
-	width: 280px;
-	max-width: 280px;
+	width: 350px;
+	max-width: 350px;
 	min-height: 350px;
 	height: 350px;
 	max-height: 350px;
@@ -3904,8 +4080,8 @@ p.comment-form-comment {
 {
 	float: left;
 	min-width: 250px;
-	width: 250px;
-	max-width: 250px;
+	width: 350px;
+	max-width: 350px;
 	min-height: 120px;
 	height: auto;
 	max-height: 210px;
@@ -3917,7 +4093,7 @@ p.comment-form-comment {
 {
 	float: left;
 	min-width: 300px;
-	width: 300px;
+	width: 400px;
 	max-width: 300px;
 	min-height: 310px;
 	height: auto;
@@ -3929,12 +4105,25 @@ p.comment-form-comment {
 #addatestimonial
 {
     margin-top: 10px;
-}
+    float: left;
+}*/
+
 #testimonialfooterbox blockquote
 {
+    margin-top: 10px;
+    margin-left: 0px;
     padding-bottom: 25px;
 }
 
+#greyhound-testimonials ul, #addatestimonial ul
+{
+    list-style-type: none;
+}
+
+#addatestimonial li
+{
+    margin-top: 20px;
+}
 /* Site Generator Line */
 #site-generator {
 	background: #f9f9f9;
@@ -4023,33 +4212,33 @@ p.comment-form-comment {
 }
 #access .menu-item li a:hover
 {
-	color: #952610 !important;
-	text-decoration: underline !important;
+	color: #952610;
 }
 
-#access .current-menu-item a, #access .current-menu-item a span, #access .current-menu-parent a
+/*#access .current-menu-item a, #access .current-menu-item a span, #access .current-menu-parent a
 {
     color :#952610 !important;
     text-decoration: underline !important;
 	
-}
+}*/
 
 
-#access .current-menu-item
+/*#access .current-menu-item
 {
 	background: url(images/icons/bullet-hover.png) 5px 12px no-repeat !important; text-decoration: none; margin: 0 0 0 10px; padding: 5px 0 5px 25px;
-}
+}*/
 #secondary .current-menu-item
 {
 	background: url(images/icons/bullet-hover.png) 0 7px no-repeat !important; text-decoration: none; margin: 0 0 0 10px; padding: 5px 0 5px 25px;
 }
-#access .current-menu-parent, #access .menu-item-5, #access .menu-item-65, #access .menu-item-7
+/*#access .current-menu-parent, #access .menu-item-5, #access .menu-item-65, #access .menu-item-7
 {
 	background: none !important;
-}
+}*/
 
+/* Removed menu arrow icons 13/09/18 AA */
 /*about and adopt menu headers for sub menu icons  sub-icon-hover.png*/
-#access #menu-item-24
+/*#access #menu-item-24
 {
 	background: url(images/icons/sub-icon.png) 105px 7px no-repeat !important;
 }
@@ -4065,7 +4254,7 @@ p.comment-form-comment {
 #access #menu-item-34:hover
 {
 	background: url(images/icons/sub-icon-hover.png) 175px 7px no-repeat !important;
-}
+}*/
 #menu-headermenu li a span
 {
 	font-size: 11px !important;
@@ -4244,14 +4433,14 @@ img.ghlimgpad
 
 #merchandise ul li a span:hover
 {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 #access .menu-item-480
 {
 	background: none !important;
 }
 
-.widget_recent_entries, .widget_recent_comments
+/*.widget_recent_entries, .widget_recent_comments
 {
 	position: relative;
 	float: left;
@@ -4266,7 +4455,8 @@ img.ghlimgpad
 	height: auto;
 	margin: 0 0 0 10px;
 	padding: 0;
-	list-style: none;
+	list-style: none !important;
+    background-image: none;
 }
 .widget_recent_entries ul li, .widget_recent_comments ul li
 {
@@ -4281,7 +4471,7 @@ img.ghlimgpad
 .widget_recent_entries ul li a, .widget_recent_comments ul li a
 {
 	position: relative;
-	/*float: left;*/
+	float: left;
 	width: 280px;
 	height: auto;
 	margin: 0;
@@ -4299,7 +4489,7 @@ img.ghlimgpad
 .widget_recent_entries ul li a:hover, .widget_recent_comments ul li a:hover
 {
 	background: #efefef url(images/icons/smallbullet-hover.png) left 7px no-repeat;
-}
+}*/
 
 .wpcf7-response-output
 {
@@ -4341,387 +4531,6 @@ img.ghlimgpad
 
 /* =Responsive Structure
 ----------------------------------------------- */
-
-@media (max-width: 800px) {
-	/* Simplify the basic layout */
-	#main #content {
-		margin: 0 7.6%;
-		width: auto;
-	}
-	#nav-below {
-		border-bottom: 1px solid #ddd;
-		margin-bottom: 1.425em;
-	}
-	#main #secondary {
-		float: none;
-		margin: 0 7.6%;
-		width: auto;
-		padding: 0;
-	}
-	/* Simplify the showcase template */
-	.page-template-showcase-php .featured-posts {
-		min-height: 280px;
-	}
-	.featured-posts section.featured-post {
-		height: auto;
-	}
-	.page-template-showcase-php section.recent-posts {
-		float: none;
-		margin: 0;
-		width: 100%;
-	}
-	.page-template-showcase-php #main .widget-area {
-		float: none;
-		margin: 0;
-		width: auto;
-	}
-	.page-template-showcase-php .other-recent-posts {
-		border-bottom: 1px solid #ddd;
-	}
-	/* Simplify the showcase template when small feature */
-	section.featured-post .attachment-small-feature,
-	.one-column section.featured-post .attachment-small-feature {
-		border: none;
-		display: block;
-		float: left;
-		height: auto;
-		margin: 0.625em auto 1.025em;
-		max-width: 30%;
-		position: static;
-	}
-	article.feature-image.small {
-		float: right;
-		margin: 0 0 1.425em;
-		width: 64%;
-	}
-	.one-column article.feature-image.small .entry-summary {
-		height: auto;
-	}
-	article.feature-image.small .entry-summary p a {
-		left: 0;
-		padding-left: 20px;
-		padding-right: 20px;
-		width: auto;
-	}
-	/* Remove the margin on singular articles */
-	.singular .entry-header,
-	.singular .entry-content,
-	.singular footer.entry-meta,
-	.singular #comments-title {
-		width: 100%;
-	}
-	/* Simplify the pullquotes and pull styles */
-	.singular blockquote.pull {
-		margin: 0 0 1.425em;
-	}
-	.singular .pull.alignleft {
-		margin: 0 1.425em 0 0;
-	}
-	.singular .pull.alignright {
-		margin: 0 0 0 1.425em;
-	}
-	.singular .entry-meta .edit-link a {
-		left: 0;
-		position: absolute;
-		top: 40px;
-	}
-	.singular #author-info {
-		margin: 2.2em -8.8% 0;
-		padding: 20px 8.8%;
-	}
-	/* Make sure we have room for our comment avatars */
-	.commentlist {
-		width: 100%;
-	}
-	.commentlist > li.comment,
-	.commentlist .pingback {
-		margin-left: 102px;
-		width: auto;
-	}
-	/* And a full-width comment form */
-	#respond {
-		width: auto;
-	}
-	/* No need to float footer widgets at this size */
-	#colophon #supplementary .widget-area {
-		float: none;
-		margin-right: 0;
-		width: auto;
-	}
-	/* No need to float 404 widgets at this size */
-	.error404 #main .widget {
-		float: none;
-		margin-right: 0;
-		width: auto;
-	}
-	/* Make sure embeds fit their containers */
-	embed,
-	object {
-		max-width: 100%;
-	}
-	
-	#gimages ul
-	{
-		z-index: 1 !important;
-	}
-	#gimages ul li
-	{
-		z-index: 2 !important;
-	}
-	#gimages ul li a
-	{
-		position: relative;
-		z-index: 100 !important;
-		/*border: solid 2px red !important;*/
-	}
-	
-	#donate-button
-	{
-		margin-top: -60px !important;
-	}
-	
-	#view-greyhound-gallery ul li a
-	{
-		position: relative;
-		float: left;
-		z-index: 100 !important;
-	}
-	
-	#topnotifierbarholder
-	{
-		margin-top: 65px !important;
-	}
-	#bcbreadcrumbs
-	{
-		margin-top: 10px !important;
-	}
-
-}
-@media (max-width: 650px) {
-	/* @media (max-width: 650px) Reduce font-sizes for better readability on smaller devices */
-	body, input, textarea {
-		font-size: 13px;
-	}
-	#site-title a {
-		font-size: 24px;
-	}
-	#site-description {
-		font-size: 12px;
-	}
-	#access ul {
-		font-size: 12px;
-	}
-	article.intro .entry-content {
-		font-size: 12px;
-	}
-	.entry-title {
-		font-size: 21px;
-	}
-	.featured-post .entry-title {
-		font-size: 14px;
-	}
-	.singular .entry-title {
-		font-size: 28px;
-	}
-	.entry-meta {
-		font-size: 12px;
-	}
-	blockquote {
-		margin: 0;
-	}
-	blockquote.pull {
-		font-size: 17px;
-	}
-	/* Reposition the site title and description slightly */
-	#site-title {
-		padding: 5.30625em 0 0;
-	}
-	#site-title,
-	#site-description {
-		margin-right: 0;
-	}
-	/* Make sure the logo and search form don't collide */
-	#branding #searchform {
-		top: 1.425em !important;
-	}
-	/* Floated content doesn't work well at this size */
-	.alignleft,
-	.alignright {
-		float: none;
-		margin-left: 0;
-		margin-right: 0;
-	}
-	/* Make sure the post-post navigation doesn't collide with anything */
-	#nav-single {
-		display: block;
-		position: static;
-	}
-	.singular .hentry {
-		padding: 1.425em 0 0;
-	}
-	.singular.page .hentry {
-		padding: 1.425em 0 0;
-	}
-	/* Talking avatars take up too much room at this size */
-	.commentlist > li.comment,
-	.commentlist > li.pingback {
-		margin-left: 0 !important;
-	}
-	.commentlist .avatar {
-		background: transparent;
-		display: block;
-		padding: 0;
-		position: static;
-	}
-	.commentlist .children .avatar {
-		background: none;
-		left: 2.2em;
-		padding: 0;
-		position: absolute;
-		top: 2.2em;
-	}
-	/* Use the available space in the smaller comment form */
-	#respond input[type="text"] {
-		width: 95%;
-	}
-	#respond .comment-form-author .required,
-	#respond .comment-form-email .required {
-		left: 95%;
-	}
-	#content .gallery-columns-3 .gallery-item {
-		width: 31%;
-		padding-right: 2%;
-	}
-	#content .gallery-columns-3 .gallery-item img {
-		width: 100%;
-		height: auto;
-	}
-	
-	#gimages ul
-	{
-		z-index: 1 !important;
-	}
-	#gimages ul li
-	{
-		z-index: 2 !important;
-	}
-	#gimages ul li a
-	{
-		position: relative;
-		z-index: 100 !important;
-		/*border: solid 2px red !important;*/
-	}
-	#donate-button
-	{
-		margin-top: -60px !important;
-	}
-	#view-greyhound-gallery ul li a
-	{
-		position: relative;
-		float: left;
-		z-index: 100 !important;
-	}
-	
-	#topnotifierbarholder
-	{
-		margin-top: 65px !important;
-	}
-	#bcbreadcrumbs
-	{
-		margin-top: 10px !important;
-	}
-
-}
-@media (max-width: 450px) {
-	#content .gallery-columns-2 .gallery-item {
-		width: 45%;
-		padding-right: 4%;
-	}
-	#content .gallery-columns-2 .gallery-item img {
-		width: 100%;
-		height: auto;
-	}
-	
-	#gimages ul
-	{
-		z-index: 1 !important;
-	}
-	#gimages ul li
-	{
-		z-index: 2 !important;
-	}
-	#gimages ul li a
-	{
-		position: relative;
-		z-index: 100 !important;
-		/*border: solid 2px red !important;*/
-	}
-	#donate-button
-	{
-		margin-top: -60px !important;
-	}
-	#view-greyhound-gallery ul li a
-	{
-		position: relative;
-		float: left;
-		z-index: 100 !important;
-	}
-	
-	#topnotifierbarholder
-	{
-		margin-top: 65px !important;
-	}
-	#bcbreadcrumbs
-	{
-		margin-top: 10px !important;
-	}
-	
-}
-@media handheld, only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-	body {
-		padding: 0;
-	}
-	#page {
-		margin-top: 0;
-	}
-	#branding {
-		border-top: none;
-	}
-	
-	#gimages ul
-	{
-		z-index: 1 !important;
-	}
-	#gimages ul li
-	{
-		z-index: 2 !important;
-	}
-	#gimages ul li a
-	{
-		position: relative;
-		z-index: 100 !important;
-		/*border: solid 2px red !important;*/
-	}
-	#donate-button
-	{
-		margin-top: -60px !important;
-	}
-	#view-greyhound-gallery ul li a
-	{
-		position: relative;
-		float: left;
-		z-index: 100 !important;
-	}
-	
-	#topnotifierbarholder
-	{
-		margin-top: 65px !important;
-	}
-	#bcbreadcrumbs
-	{
-		margin-top: 10px !important;
-	}
-}
 
 
 /* =Print
@@ -4975,16 +4784,17 @@ img.ghlimgpad
 	z-index: 9999 !important;
 }
 
-#menu-headermenu li a
+/*#menu-headermenu li a
 {
-	font-size: 18px !important;
-}
-ul.sub-menu
+	font-size: 20px !important;
+}*/
+
+.ul.sub-menu
 {
 	z-index: 99999 !important;
 }
 
-#view-greyhound-gallery ul li a, #view-greyhound-gallery-archive ul li a, #view-greyhound-gallery-homed ul li a, #view-greyhound-gallery-archivepg ul li a
+/*#view-greyhound-gallery ul li a, #view-greyhound-gallery-archive ul li a, #view-greyhound-gallery-homed ul li a, #view-greyhound-gallery-archivepg ul li a
 {
     padding: 5px !important;
     min-font-size: 11px !important;
@@ -5011,7 +4821,7 @@ ul.sub-menu
     min-height: 40px !important;
     height: 40px !important;
     max-height: 40px !important;
-}
+}*/
 
 #greyhound-lifeline-donations
 {
@@ -5028,30 +4838,38 @@ ul.sub-menu
 #footer-bottominfo ul {
     margin-top: 5px !important;
 }
-.sub-menu li a
+/*.sub-menu li a
 {
 	font: 11px Arial !important;
 }
 .nav-previous a, .nav-next a
 {
 	font: 11px Arial !important;
+} */
+
+
+/*.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}*/
+
+/*#general-information {
+    padding-left: 20px;
+    width: 570px;
+}*/
+
+ul.donate-list {
+    list-style: square;
 }
-a.tel
-{
-	float: right;
-	display: block;
-	margin: 10px 10px 0 0;
-	width: 295px;
-	height: 84px;
+
+ul.shareaholic-share-buttons {
+    margin-bottom: 20px
 }
-a.tel, a.tel span
-{
-	font-size: 24px !important;
-	color: #5f5d53 !important;
-	text-shadow: 1px 0 3px #ccc !important;
-}
-a.tel span
-{
-	unicode-bidi:bidi-override !important;
-	direction:rtl !important;
+
+.truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

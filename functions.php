@@ -849,8 +849,8 @@ function get_endpageshare(){
 /*
 add to blog page to show all the authors
 
-Just as we mentioned above that for multi-authored blogs, It’s often useful to put authors description in the end of the respective post. 
-And it’s even more useful for readers to put the list of all the blog authors on your WordPress blog if anyone wants to follow any 
+Just as we mentioned above that for multi-authored blogs, ItÂ’s often useful to put authors description in the end of the respective post. 
+And itÂ’s even more useful for readers to put the list of all the blog authors on your WordPress blog if anyone wants to follow any 
 specific author. You just need to place following code anywhere you want to display the list.
 
     <ul>
@@ -865,8 +865,8 @@ this is to add to each post
 
 You also can tweak the parameters to adjust the display.
 
-    exclude_admin: 0 (include the admin’s name in the authors list) / 1 (exclude the admin’s name from the list)
-    optioncount : 0 (No post count against the author’s name) / 1 (display post count against the author’s name)
+    exclude_admin: 0 (include the adminÂ’s name in the authors list) / 1 (exclude the adminÂ’s name from the list)
+    optioncount : 0 (No post count against the authorÂ’s name) / 1 (display post count against the authorÂ’s name)
     show_fullname : 0 (display first name only) / 1 (display full name of the author)
     hide_empty : 0 (display authors with no posts) / 1 (display authors who have one or more posts)
 
@@ -899,31 +899,91 @@ function wp_hide_update() {
 }
 add_action('admin_menu','wp_hide_update');*/
 
+/* BUTTONS */
+
+function get_donate_button()
+{
+    ?>
+    <div id="donate-button" class="gl-button clearfix">
+      <h3 class="widget-title">Donate to Us</h3>
+        <ul>
+            <li>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>donate/" title="Donate to greyhound lifeline">DONATE <span>&raquo;</span></a>
+            </li>
+        </ul>
+    </div>
+<?php
+}
 
 function get_view_greyhound_gallery_button()
 {
 ?>
-	<div id="view-greyhound-gallery">
-		<h3 class="widget-title">Greyhound Gallery</h3>
+	<div id="view-greyhound-gallery", class="gl-button">
+		<h3 class="widget-title">In Need of a Home</h3>
 		<ul>
 			<li>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>greyhound-gallery/" title="View the Greyhound Lifeline Greyhound Gallery">VIEW GREYHOUND GALLERY <span>&raquo;</span></a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>greyhound-gallery/" title="View the Greyhound Lifeline Greyhound Gallery">GREYHOUND GALLERY <span>&raquo;</span></a>
 			</li>
 		</ul>
 	</div>
 <?php
 }
 
+function get_help_button()
+{
+?>
+	  <div id="help-button", class="gl-button">
+		  <h3 class="widget-title">Help our Hounds</h3>
+		  <ul>
+			  <li>
+				  <a href="<?php echo esc_url( home_url( '/' ) ); ?>support/" title="Help greyhound lifeline">How to Help <span>&raquo;</span></a>
+			  </li>
+		  </ul>
+	  </div>
+
+<?php
+}
+
 function get_view_greyhound_gallery_archive_button()
 {
 ?>
-	<div id="view-greyhound-gallery-homed">
+	<div id="view-greyhound-gallery-homed", class="gl-button">
+	<h3 class="widget-title">On the Sofa</h3>
 		<ul>
 			<li>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>greyhound-gallery/greyhound-gallery-homed-greyhounds/" title="View the Greyhound Lifeline Greyhound Homed Gallery">VIEW HOMED GREYHOUNDS <span>&raquo;</span></a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>greyhound-gallery/greyhound-gallery-homed-greyhounds/" title="View the Greyhound Lifeline Greyhound Homed Gallery">HOMED HOUNDS <span>&raquo;</span></a>
 			</li>
 		</ul>
 	</div>
+<?php
+}
+
+function get_testimonial_button()
+{
+?>
+    <div id="testimonial-button", class="gl-button">
+		<ul>
+			<li>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/" title="Add Your Testimonial to Greyhound Lifeline">ADD YOUR TESTIMONIAL <span>&raquo;</span></a>
+			</li>
+		</ul>
+	</div>
+ 
+<?php    
+}
+
+function get_general_information()
+{
+?>
+ 
+  <div id="general-information" class="clearfix">
+    <h1 class="entry-title"><a href="http://www.greyhoundlifeline.co.uk/information/general-information/" title="Permalink to General Information" rel="bookmark">General Information</a></h1>
+    <h4>Join Greyhound Lifeline on Facebook</h4>
+    <a href="http://www.facebook.com/pages/Greyhound-Lifeline/140115126025085" rel="nofollow" onclick="target='_blank'" title="Join Greyhound Lifeline on Facebook">Greyhound Lifeline are on Facebook</a>, please come and visit us there.
+    <h4>Choosing a Boy or Girl Greyhound</h4>
+    <a href="http://www.greyhoundlifeline.co.uk/adopt/choosing-boy-girl-greyhound/" title="Choosing a Boy or Girl Greyhound">Boy or Girl</a> highlights the common problem in greyhound rescue and re homing of finding homes for the greyhound males. Perhaps after reading through the page you might give equal consideration to adopting a boy. 	
+  </div>
+
 <?php
 }
 
@@ -1181,6 +1241,7 @@ function insertFootNote($content) {
 					$contactcontent.= '</div>';
 				}
 
+
 				$contactcontent.= '<div class="contentfooternote">';
 				$contactcontent.= '<a id="adopt-a-greyhound-smile" href="'.esc_url( home_url( '/' ) ).'adopt-a-greyhound/" title="Adopt a greyhound, they make excellent pets"><img src="'.esc_url( home_url( '/' ) ).'wp-content/themes/greyhoundlifeline/images/smile-logo-slim.jpg" width="466" height="41" alt="Adopt a greyhound and make him smile"/></a>';
                 $contactcontent.= '<h4>Interested in Adopting a Greyhound?</h4>';
@@ -1202,6 +1263,7 @@ function insertFootNote($content) {
 							<p>Or by email to '.antispambot('enquiries@greyhoundlifeline.co.uk').'<br/>';
 				$contactcontent.= 'Or <a id="contact-greyhound-lifeline-to-adopt-a-greyhound" href="'.esc_url( home_url( '/' ) ).'contact/" title="Adopt a greyhound, they make excellent pets">Contact us using our Contact page</a></p>';
                 $contactcontent.= '</div>';
+
 
 			$content = $content.$contactcontent;
         }
@@ -1554,19 +1616,24 @@ function ghl_footer_testimonials()
 	?>
 	</ul>
 	<div id="addatestimonial">
-		<h4>Add Your Testimonial</h4>
-		<p>
+		<!--<h4>Add Your Testimonial</h4> -->
+		<ul>
+		    <li>
+		    <br/>
+		    <br/>
 			If Greyhound Lifeline has helped you in any way, please leave a testimonial.
 			<br/>
 			Thanks, Greyhound Lifeline
-		</p>
-		<div id="view-greyhound-gallery-homed">
-			<ul>
+		    </li>
+           <!--<li>-->
+		<!--<div id="testimonial-button">
+			<ul>-->
 				<li>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/" title="Add Your Testimonial to Greyhound Lifeline">ADD YOUR TESTIMONIAL <span>&raquo;</span></a>
+					<?php get_testimonial_button();?>
 				</li>
 			</ul>
-		</div>
+		<!--</div>
+            </li>-->
 	</div>
 	
 <?php
@@ -1686,10 +1753,14 @@ function ghl_get_events($howmanyevents)
 	//AND year(replace(substr(wposts.post_title, 1, 10), '/','-')) >=year(curdate())
 	//ORDER BY year(replace(substr(wposts.post_title, 1, 10), '/','-')),week(replace(substr(wposts.post_title, 1, 10), '/','-'))
 ?>
+        
+<!--
+Commented out 12/09/18 as not working
 	<div id="greyhound-events">
 		<h2>Upcoming Events</h2>
 		<ul>
 	<?php
+    /*
 		$retevents = "";
 		foreach($myevents as $event) {
 			$retevents .= "<li>";
@@ -1698,11 +1769,12 @@ function ghl_get_events($howmanyevents)
 			$retevents .= '<span class="fr">Read More &raquo;</span></a>';
 			$retevents .= "</li>\n";
 		}
-		echo $retevents;
+		echo $retevents;*/
 ?>
 		</ul>
 	</div>
+-->
 <?php
 }
 add_shortcode( 'get_events_list', 'ghl_get_events' );
-
+add_filter( â€˜wpcf7_load_jsâ€™, â€˜__return_falseâ€™ );

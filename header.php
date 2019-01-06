@@ -67,13 +67,15 @@
 ?>
 
 	<link rel="shortcut icon" href="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/greyhoundlifeline/images/icons/greyhound-lifeline.jpg" type="image/x-icon"/>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript" 
+src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/greyhoundlifeline/js/greyhound-cycle.js"></script>
 
 </head>
 
 <body <?php body_class(); ?>>
 
+<!-- Removed top bar code from here as was outdated 12-09-18 AA -->
 <div id="page" class="hfeed">
 
 	<header id="branding" role="banner">
@@ -84,6 +86,23 @@
 					<span>Join us on Facebook</span>
 				</a>
 			</li>
+<!-- Removed RSS option 12/09/18 AA
+			<li>
+				<a href="<?php /*echo esc_url( home_url( '/' ) ); */?>feed/" onclick="target='_blank'" title="Subscribe to Greyhound Lifeline RSS Feed">
+					<img id="site-icon-rss" src="<?php /* echo esc_url( home_url( '/' ) );*/ ?>wp-content/themes/greyhoundlifeline/images/icons/greyhound-lifeline-rss-feed.png" width="32" height="32" alt="Greyhound Lifeline RSS Feed"/>
+					<span>Subscribe by RSS</span>
+				</a>
+			</li>
+-->
+<!--
+***Newsletter option removed 30/04/18 AA ***
+			<li>
+				<a href="<?php/* echo esc_url( home_url( '/' ) ); ?>greyhound-lifeline-newsletter/" title="Join the Greyhound Lifeline Newsletter">
+					<img id="site-icon-newsletter" src="<?php echo esc_url( home_url( '/' ) ); */?>wp-content/themes/greyhoundlifeline/images/icons/greyhound-lifeline-newsletter.png" width="32" height="32" alt="Greyhound Lifeline Newsletter"/>
+					<span>Join Our Newsletter</span>
+				</a>
+			</li>
+-->
 		</ul>
 		<a href="http://www.greyhoundlifeline.co.uk/" title="Greyhound Lifeline - Supporting UK Greyhound Rescue and Rehoming">
 			<img id="site-logo" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/greyhoundlifeline/images/headers/greyhound-lifeline-logo.png" width="120" height="122" alt="Greyhound Lifeline logo"/>
@@ -94,7 +113,7 @@
 			<h3 id="independent-volunteer-greyhound-rehoming">An Independent Greyhound Welfare and Homing Group. Registered Charity number 1173175</h3>
 		</hgroup>
 		<a class="tel" href="<?php echo esc_url( home_url( '/' ) ); ?>category/main/contact/" title="Contact Greyhound Lifeline for an appointment">
-			Telephone Adoption Line:-
+			Telephone Adoption Line:
 			<br/>
 			Lucy - <span class="tel">013843 96770</span>
 		</a>
@@ -114,6 +133,7 @@
 		<?php get_latest_postbar(); ?>
 		
 		<div id="bcbreadcrumbs">
+		<?php if (function_exists(bcn_display)) {bcn_display();} ?>
 		</div>
 		
 <?php

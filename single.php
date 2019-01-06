@@ -21,7 +21,7 @@ get_header(); ?>
 
 					
 					
-					<?php get_endpageshare(); ?>
+					<?php //get_endpageshare(); ?>
 
 					<?php comments_template( '', true ); ?>
 

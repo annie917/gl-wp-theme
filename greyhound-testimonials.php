@@ -34,7 +34,7 @@ get_header(); ?>
 
 				</div>
 
-				<?php get_endpageshare(); ?>
+				<?php //get_endpageshare(); ?>
 
 			</div><!-- #content -->
 			<?php get_sidebar(); ?>
