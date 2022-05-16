@@ -21,8 +21,12 @@ get_header(); ?>
 					<img id="newsposticon" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/greyhoundlifeline/images/icons/view-icon.png" width="89" height="89" alt="View Greyhound Merchandise"/>
 					<p>
 						All profits go to support the greyhounds.
-						<br/>
-						Goods are available only from the kennels during our regular opening hours of 11am - 1pm daily.	Sorry, but we are unable to do mail order.
+					</p>
+					<p>
+						We are now able to offer mail order on certain products.  Kibble is ONLY available to buy in person.
+					</p>
+					<p>
+						If you would like to purchase selected items through online shopping, please send an email to enquiries@greyhoundlifeline.co.uk, we will respond with your total, including P&P.  You will also be sent an online invoice to pay for your goods in full before we send you your goods.
 					</p>
 				</div>
 

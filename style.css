@@ -1137,6 +1137,16 @@ a.tel:hover, a.tel span:hover
     font-size: 22px;
 }
 
+#shop-button
+{
+	margin-top: 30px;
+}
+
+#shop-button ul li a
+{
+    font-size: 22px;
+}
+
 #help-button
 {
 	margin-top: 10px;
