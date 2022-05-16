@@ -13,6 +13,7 @@ $current_layout = $options['theme_layout'];
 if ( 'content' != $current_layout ) :
 
       get_donate_button();
+	  get_shop_button();
       get_view_greyhound_gallery_button();
       get_greyhound_showcase();
       get_help_button();

@@ -915,6 +915,20 @@ function get_donate_button()
 <?php
 }
 
+function get_shop_button()
+{
+    ?>
+    <div id="shop-button" class="gl-button clearfix">
+      <h3 class="widget-title">Online Shop</h3>
+        <ul>
+            <li>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>greyhound-merchandise/" title="Visit our shop">SHOP <span>&raquo;</span></a>
+            </li>
+        </ul>
+    </div>
+<?php
+}
+
 function get_view_greyhound_gallery_button()
 {
 ?>
