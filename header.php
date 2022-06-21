@@ -115,7 +115,7 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 		<a class="tel" href="<?php echo esc_url( home_url( '/' ) ); ?>category/main/contact/" title="Contact Greyhound Lifeline for an appointment">
 			Telephone Adoption Line:
 			<br/>
-			Lucy - <span class="tel">013843 96770</span>
+			<span class="tel">013843 96770</span>
 		</a>
 		<nav id="access" role="navigation">
 			<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>

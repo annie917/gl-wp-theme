@@ -1261,16 +1261,9 @@ function insertFootNote($content) {
                 $contactcontent.= '<h4>Interested in Adopting a Greyhound?</h4>';
 				$contactcontent.= '<p>Enquiries should be directed by telephone or text message to Greyhound Lifeline</p>
 							<ul>
-								<li><strong>For adoption enquiries:</strong>
+								<li><strong>For all enquiries:</strong>
 									<ul>
-										<li>Lucy on 07769 348310</li>
-									</ul>
-								</li>
-							</ul>
-							<ul>
-								<li><strong>For any other enquiries:</strong>
-									<ul>
-										<li>Marie on 07828 138378</li>
+										<li>07769 348310</li>
 									</ul>
 								</li>
 							</ul>
